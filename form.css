@@ -1,0 +1,82 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-image: url('IMG/Graffiti-Background-53562870-1.png');
+    background-size: cover; /* Asegura que el fondo cubra toda la pantalla */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0; /* Elimina el margen por defecto */
+    color: #ffffff;
+}
+
+.form {
+    background: #000000;
+    padding: 50px;
+    border-radius: 20px; /* Ajuste del radio del borde */
+    box-shadow: 5px 5px 20px rgb(255, 248, 248);
+    text-align: center;
+    border: 1px solid #ffffff;
+}
+
+.logo {
+    width: 200px; /* Ajustado el tamaño de la imagen */
+    height: 200px; /* Ajustado el tamaño de la imagen */
+    object-fit: contain; /* Mantiene la proporción de la imagen */
+    margin-bottom: 30px; /* Espacio entre la imagen y el formulario */
+}
+
+h1 {
+    color: #fffefe;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #f1f1f1;
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 5px; /* Espacio entre la etiqueta y el input */
+}
+
+input[type="text"],
+input[type="date"], /* Corregido el tipo "fecha" a "date" */
+input[type="email"],
+input[type="number"], /* Corregido el tipo "edad" a "number" */
+input[type="tel"],
+input[type="password"] {
+    padding: 10px;
+    border: 1px solid #242222;
+    border-radius: 4px;
+    width: 100%;
+    background-color: #333; /* Fondo oscuro para los campos */
+    color: white;
+}
+
+button {
+    background-color: #c03ae9;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Transición suave para hover */
+}
+
+button:hover {
+    background-color: #520072;
+}
+
+button:focus {
+    outline: none; /* Elimina el contorno al hacer clic */
+}
