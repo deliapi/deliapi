@@ -1,0 +1,216 @@
+body {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #080808;
+    color: #ffffff;
+}
+
+header {
+    background: linear-gradient(90deg, #000000, #ca1414);
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.logo-container {
+    text-align: center;
+}
+
+.logo {
+    width: 300px;
+    margin-bottom: 50px;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#hero {
+    background-color: #5c18ca;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    text-align: center;
+    border-radius: 1px;
+    margin-bottom: 50px;
+}
+
+#productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.producto {
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px;
+    text-align: center;
+    width: calc(33% - 30px);
+    background: linear-gradient(rgb(177, 23, 23), #000000);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgb(255, 255, 255);
+}
+
+.producto img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #be0e0e;
+    color: rgb(255, 255, 255);
+}
+
+.redes-sociales a {
+    margin: 0 10px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.redes-sociales a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    .producto {
+        width: calc(50% - 30px);
+    }
+}
+
+@media (max-width: 480px) {
+    .producto {
+        width: 100%;
+    }
+}     
+
+/* Estilo para la foto de ubicación */
+#ubicacion {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#ubicacion img {
+    border-radius: 10px;
+}
+
+/* Estilo para la dirección */
+#direccion {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1.2em;
+}
+
+/* Estilo para los teléfonos */
+#telefonos {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1.2em;
+}
+/* Recuadros con color de fondo degradado */
+#ubicacion, #direccion, #telefonos {
+    background: linear-gradient(135deg, #ca1414, #000000); /* Degradado rojo a negro */
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid #fff; /* Borde blanco */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para dar profundidad */
+    margin: 10px;
+    font-size: 0.9em; /* Fuente más pequeña */
+    width: 100%; /* Asegura que el recuadro ocupe todo el espacio disponible */
+    box-sizing: border-box;
+}
+
+/* Estilo específico para la imagen de ubicación */
+#ubicacion {
+    flex: 0 0 25%; /* La imagen ocupa el 25% del espacio */
+    margin-right: 15px; /* Ajusta el margen entre la imagen y los otros recuadros */
+}
+
+#ubicacion img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Los recuadros de Dirección y Teléfonos */
+#direccion, #telefonos {
+    flex: 0 0 30%; /* Los recuadros ocupan el 30% del espacio disponible */
+    margin: 10px;
+}
+
+/* Ajuste en el tamaño de los recuadros para pantallas grandes */
+#direccion, #telefonos {
+    padding: 8px; /* Menos padding para hacer los recuadros más pequeños */
+    font-size: 0.9em; /* Reduce el tamaño de la fuente */
+}
+
+/* Estilo para el enlace de WhatsApp */
+#telefonos a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#telefonos a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para pantallas pequeñas */
+@media (max-width: 768px) {
+    main {
+        display: block; /* Cambia a bloque para apilar los recuadros en pantallas pequeñas */
+    }
+
+    #ubicacion {
+        flex: 0 0 100%; /* La imagen ocupa todo el ancho en pantallas pequeñas */
+        margin-right: 0;
+    }
+
+    #direccion, #telefonos {
+        flex: 0 0 100%; /* Los recuadros también ocupan todo el ancho en pantallas pequeñas */
+        margin: 10px 0; /* Espaciado entre los recuadros */
+    }
+}
+
+@media (max-width: 480px) {
+    #ubicacion, #direccion, #telefonos {
+        flex: 0 0 100%; /* Los recuadros ocupan todo el ancho en pantallas muy pequeñas */
+    }
+}
+

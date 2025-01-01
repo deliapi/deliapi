@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Asegúrate de que el estilo esté en su lugar -->
+</head>
+<body>
+    <header>
+        <img src="IMG/logo.png" alt="Logo" class="logo">
+        <h1>BIENVENIDO</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="pagina1.html">COMBOS</a></li>
+                <li><a href="pagina2.html">BEBIDAS</a></li>
+                <li><a href="pagina3.html">PASTELES</a></li>
+                <li><a href="carrito.html" id="carrito-link">Compras <span id="carrito-count">0</span></a></li> <!-- El contador se mostrará aquí -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="productos">
+            <!-- Ejemplo de productos -->
+            <div class="producto">
+                <img src="IMG/api1.png" alt="Producto 1">
+                <h3>Api + Pastel</h3>
+                <p class="precio">Bs 10.00</p>
+                <button class="agregar" data-nombre="Polera con Diseño" data-precio="20.00">Agregar al carrito</button>
+            </div>
+
+            <div class="producto">
+                <img src="IMG/tojori1.png" alt="Producto 2">
+                <h3>Tojori + Pastel</h3>
+                <p class="precio">Bs 10.00</p>
+                <button class="agregar" data-nombre="Polera Simple" data-precio="15.00">Agregar al carrito</button>
+            </div>
+            <!-- Más productos aquí -->
+        </section>
+
+        <section id="carrito">
+            <h2>Tu carrito de compras</h2>
+            <div id="carrito-contenido">
+                <!-- Aquí se agregarán los productos -->
+            </div>
+            <div id="total">
+                <p>Total: $<span id="total-precio">0.00</span></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>DELI API</p>
+        <div class="redes-sociales">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+
+    <script src="carrito.js"></script> <!-- Asegúrate de que el archivo JS esté en su lugar -->
+</body>
+</html>
+
+
+<!-- Dirección aleatoria -->
+<div id="direccion">
+    <h3>Dirección</h3>
+    <p> Calle: Tejerina y Sucre</p>
+</div>
+
+<!-- Teléfonos -->
+<div id="telefonos">
+    <h3>Teléfonos</h3>
+    <p>72352689</p>
+</div>
+<h3>Whatsapp</h3>
+<a href="https://wa.me/59172352689" target="_blank">+591 72352689</a>
